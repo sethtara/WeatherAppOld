@@ -1,0 +1,165 @@
+/* custom style sheet for fidenz weather app */
+body{   
+   background: url(/assets/img/header.png) no-repeat, rgb(30, 32, 39);
+   background-size:cover, auto;
+   background-size: 100%;
+  }
+header img {
+  height: 48px;
+  width: 180px;
+}
+footer {
+  text-align: center;
+  position: static;
+  height: 48px;
+  font-family: monospace;
+  color: #87888c;
+  font-size: 12px;
+  background-color: #383b47;
+  padding: 16px;
+  margin-top: 48px;
+}
+.p-lg-5 {
+  padding: 16px !important;
+}
+
+.container,
+.row {
+  justify-content: center;
+}
+/* Enter city search bar */
+#search_input {
+  background: rgb(30, 32, 39);
+  color: rgb(242, 240, 240);
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+}
+.search-box {
+  width: 384px;
+  margin: auto;
+}
+/* add city button */
+#search_button {
+  height: 40px;
+  background-color: #6c5dd3;
+  color: rgb(242, 240, 240);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.weather_cards {
+  margin-top: 32px;
+}
+/* for the weather cards layout using flex */
+.card {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  border-radius: 4px;
+  margin: 16px;
+  color: #ffffff;
+  background-color: #383b47;
+}
+
+.card:hover{
+  box-shadow: 4px 4px 4px rgba(159, 159, 159, 0.1);
+  
+}
+
+.card_up {
+  margin-top: -1px;
+  background: url(/assets/img/cloud.png) no-repeat;
+  display: flex;
+  flex-direction: row;
+  border-radius: 4px 4px 0px 0px;
+}
+.card_down {
+  width: 360px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0px 0px 4px 4px;
+  font-size: 12px;
+  padding: 16px;
+  text-align: left;
+}
+
+.rec_up {
+  width: 180px;
+  height: 148px;
+  padding: 16px;
+}
+.rec_down {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-left: 4px;
+  font-size: 12px;
+    font-weight: bold;
+}
+/* for devices sizes less than 480px */
+@media (max-width: 480px) {
+  body{
+    background-size: auto;
+  }
+  .card,
+  .card_down {
+    width: 320px;
+  }
+  .rec_up {
+    width: 160px;
+  }
+  #city_name{
+    font-size: 20px;
+  }
+ 
+}
+
+/* few tweaks for the weather typo's and alighnments */
+#city_name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #time_date {
+    font-size: 12px;
+  }
+  #description {
+    margin-top: 8px;
+    font-size: 14px;
+    margin-left: -8px;
+  }
+
+  #min_temp,#max_temp{
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+#pressure ,#humidity ,#visibility ,#wind ,#sunrise ,#sunset {
+  font-weight: lighter;  
+}
+#min_temp{
+    margin-top: 16px;
+}
+  .temp_r{
+    font-weight: bold;
+  }
+
+  #temp{
+    font-size: 40px;
+    margin:-8px;
+  }
+  #windicon{
+    width: 24px;
+    margin-left: 24px;
+    margin-top: 8px;
+
+  }
+
+  #sunrise{
+    margin-top: 4px;
+    margin-left: 8px;
+  }
+
+        
